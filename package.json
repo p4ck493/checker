@@ -1,6 +1,6 @@
 {
   "name": "@p4ck493/checker",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Collection of methods to check some data, e.g.: object, array and etc.",
   "main": "dist/index.js",
   "module": "dist/index.m.js",
@@ -78,6 +78,7 @@
     "ts-loader": "9.5.1",
     "tslint": "6.1.3",
     "tslint-config-prettier": "1.18.0",
+    "prettier": "2.8.8",
     "typescript": "5.5.4"
   }
 }
