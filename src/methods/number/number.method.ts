@@ -1,5 +1,7 @@
-import { InfinityMethod } from './infinity.method';
+import { InfinityMethod } from "./infinity.method";
 
 export function NumberMethod(target: unknown): target is number {
-  return 'number' === typeof target && !isNaN(target) && !InfinityMethod(target);
+  return (
+    "number" === typeof target && !isNaN(target) && !InfinityMethod(target)
+  );
 }

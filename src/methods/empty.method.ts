@@ -1,9 +1,13 @@
-import { StringMethod } from './string/string.method';
-import { ObjectMethod } from './object.method';
-import { ArrayMethod } from './array.method';
+import { StringMethod } from "./string/string.method";
+import { ObjectMethod } from "./object.method";
+import { ArrayMethod } from "./array.method";
 
 export function EmptyMethod<T extends object>(target: unknown): boolean {
-  return StringEmptyMethod(target) || ArrayEmptyMethod<T>(target) || ObjectEmptyMethod<T>(target);
+  return (
+    StringEmptyMethod(target) ||
+    ArrayEmptyMethod<T>(target) ||
+    ObjectEmptyMethod<T>(target)
+  );
 }
 
 export function StringEmptyMethod(target: unknown): boolean {
@@ -27,7 +31,7 @@ export function ObjectEmptyMethod<T extends object>(target: unknown): boolean {
 }
 
 export function ObjectEmptyMethodExecute(target: {}): boolean {
-  if ('size' in target) {
+  if ("size" in target) {
     // @ts-ignore
     return target.size <= 0;
   }

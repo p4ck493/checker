@@ -1,14 +1,14 @@
-import { NumberMethod } from './number.method';
-import { BigIntMethod } from './bigInt.method';
-import { EmptyMethod } from '../empty.method';
-import { SymbolMethod } from '../symbol.method';
-import regexp from '../../regexp';
+import { NumberMethod } from "./number.method";
+import { BigIntMethod } from "./bigInt.method";
+import { EmptyMethod } from "../empty.method";
+import { SymbolMethod } from "../symbol.method";
+import regexp from "../../regexp";
 
 export function NumericMethod(target: any): boolean {
   if (SymbolMethod(target)) {
     return false;
   }
-  target = '' + target;
+  target = "" + target;
   if (EmptyMethod(target)) {
     return false;
   }

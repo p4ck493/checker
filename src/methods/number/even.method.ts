@@ -1,5 +1,5 @@
-import { NumberMethod } from './number.method';
-import { BigIntMethod } from './bigInt.method';
+import { NumberMethod } from "./number.method";
+import { BigIntMethod } from "./bigInt.method";
 
 export function EvenMethod(target: unknown): target is number {
   let result = false;

@@ -1,5 +1,5 @@
-import regexp from '../../../../regexp';
-import { StringMethod } from '../../string.method';
+import regexp from "../../../../regexp";
+import { StringMethod } from "../../string.method";
 
 /**
  * ISO 8601 format.

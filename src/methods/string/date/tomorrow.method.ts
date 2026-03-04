@@ -1,4 +1,4 @@
-import { IsoMethod } from './iso/iso.method';
+import { IsoMethod } from "./iso/iso.method";
 
 export function TomorrowMethod(target: string): boolean {
   if (!IsoMethod(target)) {

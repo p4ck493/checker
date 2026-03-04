@@ -1,5 +1,5 @@
-import { StringMethod } from './string.method';
-import regexp from '../../regexp';
+import { StringMethod } from "./string.method";
+import regexp from "../../regexp";
 
 export function SpaceMethod(target: string): boolean {
   if (StringMethod(target) && target.length > 0) {

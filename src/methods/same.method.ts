@@ -1,7 +1,7 @@
-import { ArrayMethod } from './array.method';
+import { ArrayMethod } from "./array.method";
 
 export enum TypeOfValueEnum {
-  object = 'object',
+  object = "object",
 }
 
 export function SameMethod<T>(target: T, source: T): boolean {
@@ -24,12 +24,19 @@ export function SameMethod<T>(target: T, source: T): boolean {
     for (const keyOfObjectTwo of keysOfSource) {
       switch (typeof (target as any)[keyOfObjectTwo]) {
         case TypeOfValueEnum.object:
-          if (!SameMethod((target as any)[keyOfObjectTwo], (source as any)[keyOfObjectTwo])) {
+          if (
+            !SameMethod(
+              (target as any)[keyOfObjectTwo],
+              (source as any)[keyOfObjectTwo]
+            )
+          ) {
             return false;
           }
           break;
         default:
-          if ((target as any)[keyOfObjectTwo] !== (source as any)[keyOfObjectTwo]) {
+          if (
+            (target as any)[keyOfObjectTwo] !== (source as any)[keyOfObjectTwo]
+          ) {
             return false;
           }
           break;

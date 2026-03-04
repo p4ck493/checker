@@ -1,5 +1,5 @@
-import regexp from '../../regexp';
-import { StringMethod } from './string.method';
+import regexp from "../../regexp";
+import { StringMethod } from "./string.method";
 
 export function MacAddressMethod(target: string): target is string {
   if (StringMethod(target)) {

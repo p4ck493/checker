@@ -1,5 +1,5 @@
-import { StringMethod } from '../string.method';
-import regexp from '../../../regexp';
+import { StringMethod } from "../string.method";
+import regexp from "../../../regexp";
 
 /**
  * Check if `target` is upper case trying to find at least one lower case character.

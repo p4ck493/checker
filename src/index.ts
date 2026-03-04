@@ -1,2 +1,2 @@
-export * from './methods';
-export {isConfig as IsConfig} from './config';
+export * from "./methods";
+export { isConfig as IsConfig } from "./config";

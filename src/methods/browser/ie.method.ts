@@ -1,6 +1,6 @@
-import { isConfig } from '../../config';
-import { StringMethod } from '../string/string.method';
-import regexp from '../../regexp';
+import { isConfig } from "../../config";
+import { StringMethod } from "../string/string.method";
+import regexp from "../../regexp";
 
 /**
  * If you need to check custom userAgent use argument "target" if you check your browser, please use with BrowserMethod: is.browser.safari

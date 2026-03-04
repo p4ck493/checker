@@ -1,5 +1,5 @@
-import { StringMethod } from '../string.method';
-import regexp from '../../../regexp';
+import { StringMethod } from "../string.method";
+import regexp from "../../../regexp";
 
 export function PascalCaseMethod(target: unknown): target is string {
   if (StringMethod(target)) {

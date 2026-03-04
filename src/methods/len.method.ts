@@ -1,6 +1,6 @@
-import { NumberMethod } from './number/number.method';
-import { isConfig } from '../config';
-import { NumericMethod } from './number/numeric.method';
+import { NumberMethod } from "./number/number.method";
+import { isConfig } from "../config";
+import { NumericMethod } from "./number/numeric.method";
 
 function toNumber(target: any): number {
   target = +target;
@@ -22,13 +22,13 @@ function toNumber(target: any): number {
 }
 
 function operation(command: string, target: number, value: number): boolean {
-  if (command === 'gt') {
+  if (command === "gt") {
     return target > value;
-  } else if (command === 'gte') {
+  } else if (command === "gte") {
     return target >= value;
-  } else if (command === 'lt') {
+  } else if (command === "lt") {
     return target < value;
-  } else if (command === 'lte') {
+  } else if (command === "lte") {
     return target <= value;
   }
   return false;
@@ -58,7 +58,9 @@ export function LenMethod(target: string, configList: string[]): boolean {
     return length === toNumber(configList[0]);
   } else {
     for (let index = 0; index < configList.length; index++) {
-      if (operation(configList[index], length, toNumber(configList[index + 1]))) {
+      if (
+        operation(configList[index], length, toNumber(configList[index + 1]))
+      ) {
         if (index + 2 === configList.length) {
           return true;
         } else {
